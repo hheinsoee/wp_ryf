@@ -1,0 +1,20 @@
+.carousel .carousel-item{
+    height: 75vh;
+}
+.carousel .carousel-item img{
+    object-fit: cover;
+    height: inherit;
+    width: 100%;
+    object-position: center;
+}
+
+.carousel-item ._content{
+    display: flex;
+    background: linear-gradient(transparent, black);
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+    margin-top: -400px;
+    padding:10px 5vw 5vw 5vw;
+}

@@ -1,0 +1,17 @@
+{
+  "name":"Western News",
+  "description":"description",
+  "contact":{
+    "phone":"+959420295411",
+    "email":"info@western.news",
+    "address":[
+      "address 1",
+      "address 2"
+    ]
+  },
+  "social":{
+    "facebook_id":"102405104899336",
+    "youtube_id":"UCnl3Ao-BMDYvF1kTIDey60Q",
+    "twitter_id":"098765567890"
+  }
+}

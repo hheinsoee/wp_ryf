@@ -1,0 +1,107 @@
+
+._ani {
+    width: 0%;
+    height: 3px;
+    background-color: var(--theme-color);
+    transition: 0.6s;
+}
+
+._thumbnail {
+    background-color: var(--_thumbnail-bg);
+    color: var(--_thumbnail-txt);
+    min-height: 232px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+    transition: all 0.6s;
+    display: block;
+}
+
+.row ._thumbnail {
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+._thumbnail._feature ._media {
+    min-height: inherit;
+    object-fit: cover;
+}
+
+._thumbnail._feature ._content {
+    background: linear-gradient(transparent, black);
+    color: #fff;
+    position: relative;
+    margin-top: -200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+._thumbnail.flex {
+    flex-wrap: wrap;
+}
+
+._thumbnail.flex>* {
+    min-width: 180px;
+}
+
+._thumbnail:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+._thumbnail>* {
+    flex: 1;
+}
+
+._thumbnail ._media {
+    overflow: hidden;
+}
+
+._thumbnail ._content {
+    padding: 0px 1rem;
+}
+
+
+._thumbnail ._media img {
+    transform: scale(1);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    min-height: inherit;
+}
+
+._thumbnail:hover img {
+    transform: scale(1.1);
+}
+
+._thumbnail:hover ._ani {
+    width: 40%;
+}
+
+._thumbnail ._footer,
+._thumbnail ._header {
+    padding: 1rem 0;
+}
+
+._thumbnail ._header {
+    font-weight: 900;
+}
+
+._thumbnail ._footer {
+    padding-top: 1rem;
+    position: relative;
+}
+
+/* flex  */
+.flex {
+    display: flex;
+}
+
+.f_f {
+    justify-content: space-between;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}

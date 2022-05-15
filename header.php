@@ -23,7 +23,7 @@
 													?>/assets/img/ryf.ico"> -->
 	<!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
 
-	<meta name="theme-color" content="#000000">
+	<meta name="theme-color" content="#c70101">
 
 	<?php wp_head(); ?>
 

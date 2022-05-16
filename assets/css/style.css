@@ -2,23 +2,33 @@
 @import "mainSlider.css";
 @import "overwrite_bootstrap.css";
 /* @import "overwrite_bootstrap.css"; */
-/* :root {
-    --background: #23243c;
+:root {
+    /* --background: #23243c;
     --color: #ffffff;
     --theme-color: #ff0000;
     --_thumbnail-bg: #30314e;
-    --_thumbnail-txt: #d1d2ff;
-} */
+    --_thumbnail-txt: #d1d2ff; */
+    --dark:#131316;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
+
 /* nav{background:linear-gradient(90deg, rgb(57, 0, 128), var(--bs-primary)) ;} */
-nav{background:var(--bs-primary) ;}
-a,a:hover {
-    color: inherit!important;
+nav {
+    background: var(--bs-primary);
+}
+
+small {
+    font-size: 9pt;
+}
+
+a,
+a:hover {
+    color: inherit !important;
     text-decoration: none;
 }
 
@@ -40,18 +50,19 @@ a,a:hover {
 
 
 
-.li_to_inline ul{
+.li_to_inline ul {
     display: flex;
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-.li_to_inline ul>li{
+.li_to_inline ul>li {
     margin: 0px 10px;
     padding: 0px 10px;
 }
-.li_to_inline ul>li *{
+
+.li_to_inline ul>li * {
     padding: 0px;
     margin: 0px;
 }
@@ -60,9 +71,12 @@ a,a:hover {
 
 
 
-.card{overflow: hidden;}
+.card {
+    overflow: hidden;
+}
+
 .card._feature .card-body.gradient {
-    background: linear-gradient(transparent, black);
+    background: linear-gradient(transparent, var(--dark));
     color: #fff;
     position: relative;
     margin-top: -200px;
@@ -71,9 +85,10 @@ a,a:hover {
     flex-direction: column;
     justify-content: flex-end;
 }
+
 ._image,
 ._media,
-.bg_logo{
+.bg_logo {
     background-image: url(../img/loading_image.png);
     background-position: center;
     background-size: contain;
@@ -82,10 +97,12 @@ a,a:hover {
 .card ._media {
     overflow: hidden;
 }
+
 .card._feature ._media {
     min-height: inherit;
     object-fit: cover;
 }
+
 .card img {
     transform: scale(1);
     object-fit: cover;
@@ -94,17 +111,27 @@ a,a:hover {
     transition: 1s;
     min-height: inherit;
 }
+
 .card:hover img {
     transform: scale(1.1);
 }
+
 ._ani {
     width: 0%;
     height: 3px;
     background-color: var(--bs-primary);
     transition: 0.6s;
-    margin-bottom: 1px;;
+    margin-bottom: 1px;
+    ;
 }
 
 .card:hover ._ani {
     width: 40%;
+}
+
+.shop_banner {
+    background-image: linear-gradient(var(--dark) 10%, transparent, var(--dark) 90%), radial-gradient(rgba(80, 0, 0, 0.7), var(--dark)), url(../img/ironnet.jpg);
+}
+.logo_size{
+    height: 36px;
 }

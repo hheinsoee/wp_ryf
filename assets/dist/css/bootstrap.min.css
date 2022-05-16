@@ -56,12 +56,13 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #222222;
-    --bs-body-bg: #ffffff;
+    --bs-body-color: #b1b1b1;
+    --bs-body-bg: var(--dark);
 
 
     --button-bg:#ff2f2f;
     --button-bg-hover:#ff7777;
+    --card-bg:rgb(14, 23, 49);
 }
 
 *,
@@ -5137,7 +5138,7 @@ fieldset:disabled .btn {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--card-bg);
     background-clip: border-box;
     border: none;
     border-radius: .25rem

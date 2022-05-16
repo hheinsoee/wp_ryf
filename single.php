@@ -30,7 +30,9 @@ get_header();
 				$is_image = false;
 			}
 			?>
-			<header class="<?php if($is_image){echo "gradient";}?>">
+			<header class="<?php if ($is_image) {
+								echo "gradient";
+							} ?>">
 				<div>
 					<div class="read_plane _p">
 						<?php the_title('<h1>', '</h1>'); ?>
@@ -52,12 +54,15 @@ get_header();
 						<span><?php get_the_author_meta('display_name'); ?> </span>
 						<span><?php hein_time('date'); ?> <?php hein_time('recent'); ?></span>
 					</div>
-					<?php social(); ?>
+					<div class="d-flex">
+						<div class="flex-fill"></div>
+						<?php social(); ?>
+					</div>
 				</div>
 				<div class="entry-content p">
 					<?php the_content(); ?>
 				</div>
-				<?php social('fb_comment');?>
+				<?php social('fb_comment'); ?>
 			</div>
 
 		</article>

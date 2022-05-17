@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+get_header(); 
+include_once __DIR__ . '/include/blogNav.php';
+?>
 <main id="site-content" role="main">
 
   <?php

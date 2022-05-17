@@ -60,7 +60,7 @@
 	</style>
 	<nav class="navbar shadow fixed-top __autohide navbar-expand-lg navbar-dark text-light bg-primary">
 		<div class="container-fluid">
-			<div>
+			<div class="d-flex align-items-center">
 				<a class="navbar-brand d-flex" href="/">
 					<?php
 					if (has_custom_logo()) {
@@ -79,9 +79,7 @@
 					echo '<h1><b>' . get_bloginfo('name') . '</b></h1>';
 					?>
 				</a>
-				<div style="position: absolute;">
 				<?php social('fb_like', get_site_url()); ?>
-				</div>
 			</div>
 			<div class="d-lg-none">
 				<span class="bi bi-search" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">&nbsp;Search</span>

@@ -27,6 +27,7 @@ add_action('after_setup_theme', 'ryf_custom_logo_setup');
 register_nav_menus(
     array(
         'main_menu' => __('Main Menu', 'ryf'),
+        'blog_menu' => __('Blog Menu', 'ryf'),
         'foot_menu' => __('Foot Menu', 'ryf')
     )
 );

@@ -1,5 +1,6 @@
 <?php
 get_header();
+include_once __DIR__ . '/include/blogNav.php';
 ?>
 <div class="container">
     <div class="my-2 row g-lg-4 g-md-3 g-2 row-cols-1 row-cols-md-2 ">

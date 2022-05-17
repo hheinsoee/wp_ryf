@@ -1,14 +1,15 @@
 <div id="mainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-
         <?php
         $dir = new DirectoryIterator(get_template_directory() . '/assets/img/slider/');
         $index = 0;
         foreach ($dir as $fileinfo) {
             if (!$fileinfo->isDot()) {
                 $filename = $fileinfo->getFilename();
-                ?>
-                <div class="carousel-item <?php if($index == 0){echo "active";}?> ">
+        ?>
+                <div class="carousel-item <?php if ($index == 0) {
+                                                echo "active";
+                                            } ?> ">
                     <img src="<?php echo get_template_directory_uri() . '/assets/img/slider/' . $filename; ?>" class="d-block w-100" alt="...">
                     <div class="_content">
                         <div class="p-2 m-2">
@@ -17,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <?php
+        <?php
                 $index++;
             }
         }

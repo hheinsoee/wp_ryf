@@ -60,24 +60,29 @@
 	</style>
 	<nav class="navbar shadow fixed-top __autohide navbar-expand-lg navbar-dark text-light bg-primary">
 		<div class="container-fluid">
-			<a class="navbar-brand d-flex" href="/">
-				<?php
-				if (has_custom_logo()) {
-					$custom_logo_id = get_theme_mod('custom_logo');
-					$logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-				?>
-					<img style="
+			<div>
+				<a class="navbar-brand d-flex" href="/">
+					<?php
+					if (has_custom_logo()) {
+						$custom_logo_id = get_theme_mod('custom_logo');
+						$logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+					?>
+						<img style="
 					height: 7vmin;
 					/* filter: drop-shadow(3px 0 0 white) drop-shadow(0 3px 0 white) drop-shadow(-3px 0 0 white) drop-shadow(0 -3px 0 white); */
 					max-height: 50px;
 					min-height: 30px;
 					" src="<?php echo esc_url($logo[0]); ?>" alt="<?php echo get_bloginfo('name'); ?>">
-					&nbsp;
-				<?php
-				}
-				echo '<h1><b>' . get_bloginfo('name') . '</b></h1>';
-				?>
-			</a>
+						&nbsp;
+					<?php
+					}
+					echo '<h1><b>' . get_bloginfo('name') . '</b></h1>';
+					?>
+				</a>
+				<div style="position: absolute;">
+				<?php social('fb_like', get_site_url()); ?>
+				</div>
+			</div>
 			<div class="d-lg-none">
 				<span class="bi bi-search" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">&nbsp;Search</span>
 				&nbsp;

@@ -1,5 +1,5 @@
 .carousel .carousel-item{
-    height: 75vh;
+    height: 85vh;
 }
 .carousel .carousel-item img{
     object-fit: cover;
@@ -10,7 +10,7 @@
 
 .carousel-item ._content{
     display: flex;
-    background: linear-gradient(transparent, black);
+    background: linear-gradient(transparent, var(--dark));
     position: relative;
     flex-direction: column;
     justify-content: flex-end;

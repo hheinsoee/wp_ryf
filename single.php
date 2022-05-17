@@ -50,13 +50,13 @@ get_header();
 			</header>
 			<div class="read_plane ">
 				<div class="d-flex flex-wrap justify-content-between p">
-					<div class="text-muted">
+					<div class="text-muted my-2	">
 						<span><?php get_the_author_meta('display_name'); ?> </span>
 						<span><?php hein_time('date'); ?> <?php hein_time('recent'); ?></span>
 					</div>
-					<div class="d-flex">
+					<div class="d-flex flex-fill my-2">
 						<div class="flex-fill"></div>
-						<?php social(); ?>
+						<?php social(''); ?>
 					</div>
 				</div>
 				<div class="entry-content p">

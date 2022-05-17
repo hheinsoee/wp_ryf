@@ -1,6 +1,6 @@
 <?php
 get_header();
-// include_once __DIR__ . '/include/slider.php';
+include_once __DIR__ . '/include/slider.php';
 
 ?>
 <div class="container">

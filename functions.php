@@ -64,7 +64,7 @@ add_action('wp_enqueue_scripts', 'wpt_register_css');
 // fyf style 
 function ryf_theme()
 {
-    wp_enqueue_style('ryf', get_template_directory_uri() . '/assets/css/style.css?v='.filemtime(get_stylesheet_directory() .'/assets/css/style.css'));
+    wp_enqueue_style('ryf', get_template_directory_uri() . '/assets/css/style.css?v=' . filemtime(get_stylesheet_directory() . '/assets/css/style.css'));
     wp_enqueue_script('ryf-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'ryf_theme');
@@ -151,10 +151,10 @@ function hein_time($type = '')
     }
     // echo ' <i>'.date("d-m-Y (D)",strtotime($time)).'</i>';
 }
-function social($type = '')
+function social($type = '', $theUrl = null)
 {
 
-    $theUrl = esc_url(get_permalink());
+    $theUrl = $theUrl == null ? esc_url(get_permalink()) : $theUrl;
     switch ($type) {
         case 'fb_like':
         ?>
@@ -162,9 +162,9 @@ function social($type = '')
         <?php
             break;
         case 'fb_comment':
-            ?>
+        ?>
             <div class="fb-comments" data-href="<?php echo $theUrl; ?>" data-width="" data-numposts="5"></div>
-            <?php
+        <?php
             break;
         default:
         ?>

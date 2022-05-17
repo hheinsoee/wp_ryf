@@ -1,23 +1,27 @@
 <div id="mainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://i.guim.co.uk/img/media/185db93b480d5c2f15513f5d5315d82e9988fc0c/105_625_3621_2172/master/3621.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=990d7bd8a7d356fcb26dc923f8534713" class="d-block w-100" alt="...">
-            <div class="_content">
-                <div class="p-2 m-2">
-                    <h2>Hello</h2>
-                    <p>Hello this is slider</p>
+
+        <?php
+        $dir = new DirectoryIterator(get_template_directory() . '/assets/img/slider/');
+        $index = 0;
+        foreach ($dir as $fileinfo) {
+            if (!$fileinfo->isDot()) {
+                $filename = $fileinfo->getFilename();
+                ?>
+                <div class="carousel-item <?php if($index == 0){echo "active";}?> ">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/slider/' . $filename; ?>" class="d-block w-100" alt="...">
+                    <div class="_content">
+                        <div class="p-2 m-2">
+                            <h2>RYF Stadium</h2>
+                            <p>ရွာကြီးမြောက်ရပ်ကွက် စစ်တွေမြို့</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="https://i.guim.co.uk/img/media/185db93b480d5c2f15513f5d5315d82e9988fc0c/105_625_3621_2172/master/3621.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=990d7bd8a7d356fcb26dc923f8534713" class="d-block w-100" alt="...">
-            <div class="_content">
-                <div class="p-2 m-2">
-                    <h2>Hello 2</h2>
-                    <p>Hello this is slider</p>
-                </div>
-            </div>
-        </div>
+                <?php
+                $index++;
+            }
+        }
+        ?>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

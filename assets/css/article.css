@@ -12,6 +12,6 @@ article .gradient{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color:#ffffff;
+    color:var(--dark_invert);
     padding-bottom: 30px;
 }

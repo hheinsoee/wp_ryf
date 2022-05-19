@@ -8,7 +8,8 @@
     --theme-color: #ff0000;
     --_thumbnail-bg: #30314e;
     --_thumbnail-txt: #d1d2ff; */
-    --dark:#131316;
+    --dark:#ffffff;
+    --dark_invert:#16265e;
 }
 
 body {
@@ -76,8 +77,8 @@ a:hover {
 }
 
 .card._feature .card-body.gradient {
-    background: linear-gradient(transparent, var(--dark));
-    color: #fff;
+    background: linear-gradient(transparent, var(--dark_invert));
+    color: var(--dark);
     position: relative;
     margin-top: -200px;
     height: 200px;

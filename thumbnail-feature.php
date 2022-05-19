@@ -13,7 +13,7 @@
         }
         ?>
         <div class="card-body bg_logo <?php if($is_image){echo "gradient";}?>">
-            <?php the_title('<h5 class="h2 card-title">', '</h5>'); ?>
+            <?php the_title('<h3 class="h5 card-title">', '</h3>'); ?>
             <div class="_ani"></div>
             <div>
                 <?php

@@ -14,7 +14,7 @@
         ?>
         <div class="card-body d-flex flex-column" style="flex:1;min-width:200px;">
             <div class="_ani"></div>
-            <?php the_title('<h3 class="card-title">', '</h3>'); ?>
+            <?php the_title('<h3 class="card-title h5">', '</h3>'); ?>
             <p class="card-text">
                 <?php echo html_entity_decode(mb_strimwidth(get_the_excerpt(), 0, 150, ' ...<i>see more</i>'), ENT_QUOTES, 'UTF-8') ?>
             </p>

@@ -164,7 +164,7 @@ function social($type = '', $theUrl = null)
             break;
         case 'fb_comment':
         ?>
-            <div class="fb-comments" data-href="<?php echo $theUrl; ?>" data-width="" data-numposts="5"></div>
+            <div class="fb-comments" data-href="<?php echo $theUrl; ?>" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>
         <?php
             break;
         default:

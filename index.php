@@ -3,10 +3,10 @@ get_header();
 include_once __DIR__ . '/include/blogNav.php';
 ?>
 <div class="container">
-    <div class="my-2 row g-lg-4 g-md-3 g-2 row-cols-1 row-cols-md-2 ">
+    <div class="row g-lg-4 mt-2 g-md-3 g-2 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
         <?php
         $args = array(
-            'posts_per_page' => 2,
+            'posts_per_page' => 3,
             'paged' => 1,
             'offset' => 0,
             // 'post_type' => 'my_custom_type'
@@ -21,11 +21,16 @@ include_once __DIR__ . '/include/blogNav.php';
         $wp_query = new WP_query($args);
 
         if ($wp_query->have_posts()) {
+            $index = 1;
             while ($wp_query->have_posts()) {
+                $feature_content = array(1);
                 $wp_query->the_post();
-        ?>
-                <div class="col"><?php get_template_part('thumbnail', 'feature'); ?></div>
-        <?php
+                if (in_array($index, $feature_content)) {
+                    get_template_part('thumbnail', 'feature');
+                } else {
+                    get_template_part('thumbnail', 'card');
+                }
+                $index++;
             }
         } else {
             // no posts found

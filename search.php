@@ -44,7 +44,7 @@
                             ?>
                             <div class="flex-fill px-2">
                             <h4 class="h6"><u><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></u></h4>
-                            <small><?php echo wp_trim_words(get_the_excerpt(), 70); ?></small>
+                            <!-- <small><?php //echo wp_trim_words(get_the_excerpt(), 70); ?></small> -->
                             <?php
                             if ($post_tags) {
                             ?>

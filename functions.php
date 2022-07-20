@@ -67,6 +67,7 @@ function ryf_theme()
 {
     wp_enqueue_style('ryf', get_template_directory_uri() . '/assets/css/style.css?v=' . filemtime(get_stylesheet_directory() . '/assets/css/style.css'));
     wp_enqueue_script('ryf-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true);
+    wp_enqueue_script('color', get_template_directory_uri() . '/js/averageColor.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'ryf_theme');
 

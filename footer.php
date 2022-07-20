@@ -5,17 +5,17 @@
     </center>
 </div>
 <footer class="mt-5">
-    <div class="py-5 px-2">
+    <!-- <div class="py-5 px-2">
         <center>main sponsored by</center>
         <div class="p m">
             <div class="d-flex justify-content-center">
-                <img class="logo_size mx-3 p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/sponsor/tz.png" alt="">
-                <img class="logo_size mx-3 p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/sponsor/tz.png" alt="">
-                <img class="logo_size mx-3 p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/sponsor/tz.png" alt="">
-                <img class="logo_size mx-3 p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/sponsor/tz.png" alt="">
+                <img class="logo_size mx-3 p-1" src="<?php //echo get_template_directory_uri(); ?>/assets/img/sponsor/tz.png" alt="">
+                <img class="logo_size mx-3 p-1" src="<?php //echo get_template_directory_uri(); ?>/assets/img/sponsor/tz.png" alt="">
+                <img class="logo_size mx-3 p-1" src="<?php //echo get_template_directory_uri(); ?>/assets/img/sponsor/tz.png" alt="">
+                <img class="logo_size mx-3 p-1" src="<?php //echo get_template_directory_uri(); ?>/assets/img/sponsor/tz.png" alt="">
             </div>
         </div>
-    </div>
+    </div> -->
     <center><small><a href="https://www.heinsoe.com" target="_blank">website is sponsored by www.heinsoe.com</a></small></center>
     <div class="text-light bg-dark">
         <div class="d-md-flex d-lg-flex justify-content-center py-5 px-2 h3">

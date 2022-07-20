@@ -114,11 +114,11 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #181818;
-    --bs-body-bg: #ffffff;
+    --bs-body-color: #acacac;
+    --bs-body-bg: #000000;
     --button-bg: #ff2f2f;
     --button-bg-hover: #ff7777;
-    --card-bg: rgb(235 244 251);
+    --card-bg: rgb(51, 54, 56);
 }
 *,
 ::after,

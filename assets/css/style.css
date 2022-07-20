@@ -1,6 +1,7 @@
 @import "article.css";
 @import "mainSlider.css";
 @import "overwrite_bootstrap.css";
+
 /* @import "overwrite_bootstrap.css"; */
 :root {
     /* --background: #23243c;
@@ -8,8 +9,8 @@
     --theme-color: #ff0000;
     --_thumbnail-bg: #30314e;
     --_thumbnail-txt: #d1d2ff; */
-    --dark:#ffffff;
-    --dark_invert:#16265e;
+    --dark: #000000;
+    --dark_invert: #cecece;
 }
 
 body {
@@ -77,8 +78,8 @@ a:hover {
 }
 
 .card._feature .card-body.gradient {
-    background: linear-gradient(transparent, var(--dark_invert));
-    color: var(--dark);
+    background: linear-gradient(transparent, var(--dark));
+    color: var(--dark_invert);
     position: relative;
     margin-top: -200px;
     height: 200px;
@@ -134,6 +135,7 @@ a:hover {
 .shop_banner {
     background-image: linear-gradient(var(--dark) 10%, transparent, var(--dark) 90%), radial-gradient(rgba(80, 0, 0, 0.7), var(--dark)), url(../img/ironnet.jpg);
 }
-.logo_size{
+
+.logo_size {
     height: 36px;
 }
